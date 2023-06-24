@@ -1,0 +1,136 @@
+#articles {
+  background: rgb(10, 17, 40);
+  .articles {
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      color: #ffffff;
+      padding-top: 270px;
+      text-align: center;
+    }
+    &__block {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-row-gap: 35px;
+      grid-column-gap: 20px;
+      padding-top: 85px;
+    }
+    &__card {
+      background: #ffffff;
+      border-radius: 20px;
+      max-width: 360px;
+      &:hover{
+        transform: scale(1.05);
+        transition: 0.4s;
+
+      }
+      img {
+        max-width: 360px;
+      }
+      &-block {
+        padding: 10px 35px 10px 17px;
+        &-state {
+          font-weight: 500;
+          font-size: 14px;
+          color: #898989;
+        }
+        p {
+          font-weight: 600;
+          font-size: 16px;
+          color: #000000;
+          padding: 10px 0 21px 0;
+        }
+      }
+      &-date {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 29px;
+        &-icons {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-weight: 500;
+          font-size: 15px;
+          color: #044176;
+        }
+        &-icon {
+          font-size: 22px;
+        }
+        &-read {
+          cursor: pointer;
+          color: #044176;
+        }
+        &-data {
+          font-weight: 500;
+          font-size: 15px;
+          color: #044176;
+        }
+      }
+    }
+    &__btn {
+      display: flex;
+      justify-content: center;
+      padding: 50px 0 150px 0;
+    }
+    &__btn-link {
+      width: 246px;
+      font-weight: 500;
+      font-size: 18px;
+      color: #ffffff;
+      background: #034078;
+      border-radius: 5px;
+      padding: 18px 0;
+      cursor: pointer;
+    }
+    &__oforms {
+      background: #ffffff;
+      box-shadow: -5px -3px 10px rgba(16, 23, 47, 0.45),
+        9px 9px 9px rgba(10, 15, 33, 0.45);
+      border-radius: 10px;
+    }
+    &__oform {
+      display: flex;
+      gap: 175px;
+      align-items: center;
+      width: 100%;
+      padding: 70px 100px 57px 79px;
+      &-text {
+        h2 {
+          font-weight: 700;
+          font-size: 28px;
+          color: #000000;
+          max-width: 578px;
+        }
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          color: #000000;
+          max-width: 578px;
+          padding-top: 20px;
+        }
+      }
+      &-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+          border-radius: 5px;
+          background: #034078;
+          border-radius: 5px;
+          width: 250px;
+          padding: 15px 0;
+          color: #fff;
+          cursor: pointer;
+        }
+        span {
+          font-weight: 500;
+          font-size: 16px;
+          text-align: center;
+          color: #767676;
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}

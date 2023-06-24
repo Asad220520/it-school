@@ -1,0 +1,56 @@
+#home {
+  background: rgb(10, 17, 40);
+  // background: rgb(2, 3, 16);
+  // background: linear-gradient(
+  //   95deg,
+  //   rgba(2, 3, 16, 1) 0%,
+  //   rgba(1, 0, 17, 1) 14%,
+  //   rgb(3, 71, 102) 99%
+  // );
+
+  .home {
+    display: flex;
+    padding-top: 120px;
+    &__title {
+      padding-top: 80px;
+      h1 {
+        max-width: 516px;
+        font-weight: 700;
+        font-size: 48px;
+        color: #ffffff;
+      }
+      p {
+        padding-top: 35px;
+        max-width: 420px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #ffffff;
+      }
+    }
+    &__img {
+      position: relative;
+      max-width: 650px;
+      height: 535px;
+      &-icon {
+        position: absolute;
+        top: 0;
+        right: 37%;
+      }
+      &-icon2 {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+      }
+      &-icon3 {
+        position: absolute;
+        bottom: -5%;
+        left: 49%;
+      }
+      &-icon4 {
+        position: absolute;
+        bottom: 29%;
+        right: -12%;
+      }
+    }
+  }
+}

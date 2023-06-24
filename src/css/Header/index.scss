@@ -1,0 +1,65 @@
+#header {
+  background: rgb(10, 17, 40);
+  // background: linear-gradient(
+  //   95deg,
+  //   rgba(2, 3, 16, 1) 0%,
+  //   rgba(1, 0, 17, 1) 34%,
+  //   rgb(3, 71, 102) 99%
+  // );
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(22px);
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+    &__logo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 72px;
+        height: 45px;
+      }
+    }
+    &__nav {
+      display: flex;
+      margin-left: 50px;
+    }
+    &__menu-list {
+      display: flex;
+      gap: 40px;
+    }
+    &__menu-link {
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .active {
+      color: #0d508f;
+    }
+    &__podpiska {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      a {
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: #ffffff;
+      }
+      &-voyti {
+        color: #ffffff;
+      }
+      &-podpis {
+        background: #034078;
+        border-radius: 5px;
+        padding: 14px 0;
+        min-width: 207px;
+        width: 100%;
+      }
+    }
+  }
+}
